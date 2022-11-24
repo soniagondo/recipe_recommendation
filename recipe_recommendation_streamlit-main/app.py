@@ -5,6 +5,7 @@ from nltk.tokenize import word_tokenize
 import nltk
 nltk.download('punkt')
 from pathlib import Path
+import os
 
 recipes = Path(__file__) / 'app/recipe_recommendation/recipe_recommendation_streamlit-main/recipes_final.csv'
 #recipes = pd.read_csv("/recipe_recommendation/recipe_recommendation_streamlit-main/recipes_final.csv")
@@ -28,11 +29,11 @@ st.subheader("Você está com fome e não tem ideia do que cozinhar? Vem que a g
 
 
 colA,colB = st.columns(2,gap = "large")
-
-Imagem1 = Path(__file__) /'app/recipe_recommendation/recipe_recommendation_streamlit-main/Imagem1.png'
-Imagem2 = Path(__file__) /'app/recipe_recommendation/recipe_recommendation_streamlit-main/Imagem2.png'
-colA.image(Imagem1,use_column_width = "auto")
-colB.image(Imagem2,use_column_width = "auto")
+"./Imagem1.png"
+#Imagem1 = Path(__file__) /'app/recipe_recommendation/recipe_recommendation_streamlit-main/Imagem1.png'
+#Imagem2 = Path(__file__) /'app/recipe_recommendation/recipe_recommendation_streamlit-main/Imagem2.png'
+colA.image("./Imagem1.png",use_column_width = "auto")
+colB.image("./Imagem2.png",use_column_width = "auto")
 
 st.markdown("---")
 
