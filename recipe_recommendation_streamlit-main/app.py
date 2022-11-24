@@ -29,7 +29,7 @@ st.subheader("Você está com fome e não tem ideia do que cozinhar? Vem que a g
 
 
 colA,colB = st.columns(2,gap = "large")
-"./Imagem1.png"
+
 #Imagem1 = Path(__file__) /'app/recipe_recommendation/recipe_recommendation_streamlit-main/Imagem1.png'
 #Imagem2 = Path(__file__) /'app/recipe_recommendation/recipe_recommendation_streamlit-main/Imagem2.png'
 colA.image("./Imagem1.png",use_column_width = "auto")
