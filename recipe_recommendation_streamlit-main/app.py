@@ -5,7 +5,7 @@ from nltk.tokenize import word_tokenize
 import nltk
 nltk.download('punkt')
 
-recipes = pd.read_csv("./app/recipe_recommendation/recipe_recommendation_streamlit-main/recipes_final.csv")
+recipes = pd.read_csv("/recipe_recommendation/recipe_recommendation_streamlit-main/recipes_final.csv")
 
 PS = PorterStemmer()
 
