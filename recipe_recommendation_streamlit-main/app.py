@@ -32,8 +32,8 @@ colA,colB = st.columns(2,gap = "large")
 
 #Imagem1 = Path(__file__) /'app/recipe_recommendation/recipe_recommendation_streamlit-main/Imagem1.png'
 #Imagem2 = Path(__file__) /'app/recipe_recommendation/recipe_recommendation_streamlit-main/Imagem2.png'
-colA.image("./Imagem1.png",use_column_width = "auto")
-colB.image("./Imagem2.png",use_column_width = "auto")
+colA.image("https://github.com/kikottoni/recipe_recommendation_streamlit/blob/main/Imagem1.png",use_column_width = "auto")
+colB.image("https://github.com/kikottoni/recipe_recommendation_streamlit/blob/main/Imagem2.png",use_column_width = "auto")
 
 st.markdown("---")
 
