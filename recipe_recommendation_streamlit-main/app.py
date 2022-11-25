@@ -4,11 +4,14 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 import nltk
 nltk.download('punkt')
-from pathlib import Path
+#from pathlib import Path
 import os
 
-recipes = Path(__file__) / 'app/recipe_recommendation/recipe_recommendation_streamlit-main/recipes_final.csv'
-#recipes = pd.read_csv("/recipe_recommendation/recipe_recommendation_streamlit-main/recipes_final.csv")
+#recipes = Path(__file__) / 'app/recipe_recommendation/recipe_recommendation_streamlit-main/recipes_final.csv'
+url = "https://raw.githubusercontent.com/soniagondo/recipe_recommendation/main/recipe_recommendation_streamlit-main/recipes_final.csv"
+recipes = pd.read_csv(url)
+
+#recipes = pd.read_csv("https://raw.githubusercontent.com/kikottoni/recipe_recommendation_streamlit/main/recipes_final.csv")
 
 PS = PorterStemmer()
 
@@ -32,8 +35,8 @@ colA,colB = st.columns(2,gap = "large")
 
 #Imagem1 = Path(__file__) /'app/recipe_recommendation/recipe_recommendation_streamlit-main/Imagem1.png'
 #Imagem2 = Path(__file__) /'app/recipe_recommendation/recipe_recommendation_streamlit-main/Imagem2.png'
-colA.image("https://github.com/kikottoni/recipe_recommendation_streamlit/blob/main/Imagem1.png",use_column_width = "auto")
-colB.image("https://github.com/kikottoni/recipe_recommendation_streamlit/blob/main/Imagem2.png",use_column_width = "auto")
+colA.image("https://raw.githubusercontent.com/soniagondo/recipe_recommendation/main/recipe_recommendation_streamlit-main/Imagem1.png",use_column_width = "auto")
+colB.image("https://raw.githubusercontent.com/soniagondo/recipe_recommendation/main/recipe_recommendation_streamlit-main/Imagem1.png",use_column_width = "auto")
 
 st.markdown("---")
 
